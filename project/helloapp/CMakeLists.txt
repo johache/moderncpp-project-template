@@ -47,4 +47,4 @@ target_include_directories(${TARGET_NAME}
 )
 
 # link against hellolib
-target_link_libraries(${TARGET_NAME} PUBLIC hellolib)
+target_link_libraries(${TARGET_NAME} PUBLIC hellolib GTest::GTest)

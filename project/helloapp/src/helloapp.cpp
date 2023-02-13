@@ -1,18 +1,21 @@
+#include <string>
+#include <vector>
+
 #include "hellolib.h"
+#include "gtest/gtest.h"
 
 using namespace hello;
+using namespace std;
 
-int main() {
-  hellolib hello{};
-  int32_t error_code = hello.saySomething("Hello Modern C++ Development");
-  if (error_code > 0) {
-    return error_code;
-  }
-#ifdef WITH_OPENSSL
-  error_code = hello.saySomethingHashed("Hello Modern C++ Development");
-  if (error_code > 0) {
-    return error_code;
-  }
-#endif
-  return 0;
+TEST(FactorialTest, HandlesZeroInput) {
+  vector<string> v1 = {"eat","tea","tan","ate","nat","bat"};
+  vector<string> v2 = {"eat","tea","tan","ate","nat","bat"};
+
+  EXPECT_EQ(v1, v2);
+}
+
+int main(int argc, char **argv) {
+ ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+
 }
