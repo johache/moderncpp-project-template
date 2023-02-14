@@ -13,7 +13,7 @@ using namespace std;
 
 namespace JOH {
 
-string Helper::toStr(vector<string> v) {
+string toStr(vector<string> v) {
   string ans = "[";
   for (auto& s: v)
     ans += s + ", ";
@@ -25,7 +25,7 @@ string Helper::toStr(vector<string> v) {
 }
 
 
-string Helper::toStr(vector<int> v) {
+string toStr(vector<int> v) {
   string ans = "[";
   for (auto& s: v)
     ans += to_string(s) + ", ";

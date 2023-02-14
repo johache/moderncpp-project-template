@@ -13,15 +13,9 @@
 
 namespace JOH {
 
-  class Helper {
+std::string toStr(std::vector<std::string> v);
+std::string toStr(std::vector<int> v);
     
-  public:
-    static std::string toStr(std::vector<std::string> v);
-    static std::string toStr(std::vector<int> v);
-    
-  private:
-
-  };
 }
 
 #endif /* __JOH_HELPER_H__ */
