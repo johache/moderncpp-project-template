@@ -3,9 +3,11 @@
 
 #include "hellolib.h"
 #include "gtest/gtest.h"
+#include "gmock/gmock.h"
 
 using namespace hello;
 using namespace std;
+using namespace ::testing;
 
 TEST(FactorialTest, HandlesZeroInput) {
   vector<string> v1 = {"eat","tea","tan","ate","nat","bat"};
