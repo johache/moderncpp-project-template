@@ -4,6 +4,7 @@
 #include "hellolib.h"
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
+#include "Helper.h"
 
 using namespace hello;
 using namespace std;

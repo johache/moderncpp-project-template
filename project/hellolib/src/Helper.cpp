@@ -14,6 +14,8 @@ using namespace std;
 namespace JOH {
 
 string toStr(vector<string> v) {
+  if (v.empty()) return "[]";
+  
   string ans = "[";
   for (auto& s: v)
     ans += s + ", ";
@@ -24,8 +26,9 @@ string toStr(vector<string> v) {
   return ans;
 }
 
-
 string toStr(vector<int> v) {
+  if (v.empty()) return "[]";
+  
   string ans = "[";
   for (auto& s: v)
     ans += to_string(s) + ", ";
